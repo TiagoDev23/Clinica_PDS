@@ -1,6 +1,6 @@
 package com.models.entity;
 
-import java.sql.Date;
+import java.util.Date;
 
 public class Paciente extends Usuario {
 
@@ -8,9 +8,10 @@ public class Paciente extends Usuario {
     private double altura;
     private String tipoSanguineo;
 
-    public Paciente(String cpf, String nome, Date dataNascimento, String sexo, String telefone, String email,
-            String senha, String cep, String rua, int numeroDaCasa, String bairro, String cidade, String uf,
-            double peso, double altura, String tipoSanguineo) {
+    public Paciente(String cpf, String nome, Date dataNascimento, String sexo, double peso, double altura,
+            String tipoSanguineo,
+            String telefone, String email, String senha, String cep, String rua, int numeroDaCasa, String bairro,
+            String cidade, String uf) {
         super(cpf, nome, dataNascimento, sexo, telefone, email, senha, cep, rua, numeroDaCasa, bairro, cidade, uf);
         this.peso = peso;
         this.altura = altura;

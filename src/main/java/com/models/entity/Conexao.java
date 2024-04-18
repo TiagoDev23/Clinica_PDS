@@ -13,12 +13,8 @@ public class Conexao {
         try {
             // Certificar-se que a conexão não foi criada anteriormente
             if (conexao == null) {
-                // DRIVERMANAGER --> COMUNICAÇÃO COM TODOS OS DRIVERS
-                // FAZ A PONTE DA PROGRAMAÇÃO COM O BANCO DE DADOS
                 conexao = DriverManager.getConnection("jdbc:postgresql://localhost:5432/clinica", "postgres",
-                        "12345");
-
-                // VERIFICA SE A CONEXÃO DEU CERTO
+                        "postgres");
                 if (conexao != null) {
                     System.out.println("\n  +---------------------------+");
                     System.out.println("  | Banco de dados conectado. |");

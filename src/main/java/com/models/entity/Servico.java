@@ -5,11 +5,13 @@ public class Servico {
     private int codigo;
     private String nome;
     private double valor;
+    private boolean status;
     
-    public Servico(int codigo, String nome, double valor) {
+    public Servico(int codigo, String nome, double valor, boolean status) {
         this.codigo = codigo;
         this.nome = nome;
         this.valor = valor;
+        this.status = status;
     }
 
     public int getCodigo() {
@@ -34,6 +36,14 @@ public class Servico {
 
     public void setValor(double valor) {
         this.valor = valor;
+    }
+
+    public boolean getStatus() {
+        return status;
+    }
+
+    public void setStatus(boolean status) {
+        this.status = status;
     }
 
 }
